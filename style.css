@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    color: #63B5D8;
+    background-color: #212629;
+}
+
+/* Styles pour le titre */
+h1 {
+    color: #63B5D8;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Styles pour le conteneur principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Styles pour les en-têtes */
+h2 {
+    color: #63B5D8;
+    margin-top: 20px;
+}
+
+/* Styles pour les labels */
+label {
+    color: #C2C7CB;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+/* Styles pour les champs de saisie */
+input[type="number"] {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+    background-color: #212629;
+    color: #C2C7CB;
+    border: 2px solid #3c3d3e;
+    border-radius: 5px;
+    transition: border-color 0.3s, color 0.3s;
+}
+
+input[type="number"]:hover {
+    border-color: #63B5D8;
+    color: #63B5D8;
+}
+
+/* Styles pour les boutons */
+button {
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 10%;
+    background-color: #212629;
+    color: #C2C7CB;
+    border: 2px solid #3c3d3e;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #63B5D8;
+    color: #212629;
+}
+
+/* Styles pour les boutons radio */
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Styles pour le bouton de calcul */
+#calculate_button {
+    margin-top: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row; /* Afficher les conteneurs côte à côte */
+    justify-content: space-around; /* Espacement égal entre les conteneurs */
+    align-items: flex-start; /* Alignement des colonnes au début */
+    width: 66%;
+    margin: 0 auto; /* Centrer horizontalement */
+}
+
+#time_fields,
+#other_fields {
+    flex: 1;
+    margin-right: 20px;
+    width: 50%;
+    
+}
+/* Styles pour les boutons radio */
+#options_container {
+    display: flex;
+    flex-direction: column; /* Afficher les boutons radio les uns en dessous des autres */
+}
+
+#options_container label {
+    margin-bottom: 5px; /* Espacement entre les boutons radio */
+}
+
+
+#result {
+    text-align: center; /* Centrer le contenu horizontalement */
+    font-size: xx-large; /* Taille de police grosse */
+}
+
+.custom-logo {
+    display: block;
+    margin: 0 auto;
+    max-width: 20%;
+    border-radius: 10px;
+}

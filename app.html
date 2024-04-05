@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sequoIA Memory</title>
+
+    <!-- GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+            
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="logo.png" alt="Logo" class="custom-logo">
+
+    <h1>Memory Calculator</h1>
+
+    <div class="container">
+        <div id="time_fields">
+            <h2>Time</h2>
+            <div>
+                <label for="year">Years:</label>
+                <input type="number" id="year" value="1" min="0">
+            </div>
+            <div>
+                <label for="week">Weeks:</label>
+                <input type="number" id="week" value="0" min="0">
+            </div>
+            <div>
+                <label for="day">Days:</label>
+                <input type="number" id="day" value="0" min="0">
+            </div>
+        </div>
+
+        <div id="other_fields">
+            <h2>Parameters</h2>
+            <div>
+                <label for="sampling_frequency">Sampling Frequency (Hz):</label>
+                <input type="number" id="sampling_frequency" value="25" min="0">
+            </div>
+            <div>
+                <label for="kilometers">Kilometers:</label>
+                <input type="number" id="kilometers" value="20" min="0">
+            </div>
+
+            <div>
+                <label for="gauge">Gauge (meter):</label>
+                <input type="number" id="gauge" value="10" min="0">
+            </div>
+        </div>
+
+        <div id="options_container">
+            <h2>Data Type</h2>
+            <label>
+                <input type="radio" name="type" value="1" checked> INT
+            </label>
+            <label>
+                <input type="radio" name="type" value="2"> NUMERIC
+            </label>
+            <label>
+                <input type="radio" name="type" value="4"> FLOAT
+            </label>
+            <label>
+                <input type="radio" name="type" value="8"> DOUBLE
+            </label>
+        </div>
+        
+
+        <!-- <button id="calculate_button" onclick="calculate()">Calculer</button> -->
+    </div>
+
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
