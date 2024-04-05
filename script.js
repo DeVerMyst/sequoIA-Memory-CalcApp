@@ -68,3 +68,4 @@ gaugeInput.addEventListener('input', calculate);
 typeInputs.forEach(input => {
     input.addEventListener('input', calculate);
 });
+
