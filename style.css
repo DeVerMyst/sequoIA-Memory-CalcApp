@@ -87,7 +87,7 @@ input[type="radio"] {
     flex-direction: row; /* Afficher les conteneurs côte à côte */
     justify-content: space-around; /* Espacement égal entre les conteneurs */
     align-items: flex-start; /* Alignement des colonnes au début */
-    width: 66%;
+    width: 90%;
     margin: 0 auto; /* Centrer horizontalement */
 }
 
